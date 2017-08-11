@@ -1,5 +1,5 @@
 <!--<platform name="android">-->
-    <!--<config-file target="config.xml" parent="/*">-->
+    <!--<config-file target="plugin.xml" parent="/*">-->
         <!--<feature name="contextmenuAndroid">-->
             <!--<param name="android-package" value="org.apache.cordova.plugin.contextmenuAndroid"/>-->
         <!--</feature>-->
@@ -17,7 +17,7 @@
     <description>Context Menu Disable for Android</description>
     <asset src="www/ContextMenu.js" target="js/ContextMenu.js"/>
     <platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="plugin.xml" parent="/*">
             <feature name="Contextmenu">
                 <param name="android-package" value="org.apache.cordova.plugin.contextmenuAndroid"/>
             </feature>
