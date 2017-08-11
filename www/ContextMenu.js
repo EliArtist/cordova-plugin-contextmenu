@@ -1,3 +1,5 @@
+console.log(":::::CONTEXTMENUJS:::::");
+
 function ContextMenu() {
     this._test_ = "Hallo Welt!";
 }
