@@ -1,7 +1,7 @@
 console.log(":::::CONTEXTMENUJS:::::");
 
 var ContextMenu = {
-    __test: "Hallo Welt";
+    __test: "Hallo Welt",
 
     getTest: function() {
         return ContextMenu.__test;
