@@ -5,7 +5,7 @@
         <!--</feature>-->
     <!--</config-file>-->
 
-    <!--<source-file src="src/android/contextmenuAndroid.java" target-dir="src/org/apache/cordova/plugin" />-->
+    <!--<source-file src="src/android/Contextmenu.java" target-dir="src/org/apache/cordova/plugin" />-->
 <!--</platform>-->
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -23,6 +23,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/contextmenuAndroid.java" target-dir="src/org/apache/cordova/plugin" />
+        <source-file src="src/android/Contextmenu.java" target-dir="src/org/apache/cordova/plugin" />
     </platform>
 </plugin>
