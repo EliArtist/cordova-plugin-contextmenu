@@ -23,6 +23,10 @@
             </feature>
         </config-file>
 
+        <js-module src="www/ContextMenu.js" name="ContextMenu">
+            <clobbers target="ContextMenu"/>
+        </js-module>
+
         <source-file src="src/android/Contextmenu.java" target-dir="src/org/apache/cordova/plugin" />
     </platform>
 </plugin>
