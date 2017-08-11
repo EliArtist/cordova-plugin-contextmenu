@@ -11,7 +11,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-file"
+        id="de.adornis.cordova.contextmenu"
         version="0.0.1-dev">
     <name>Contextmenu</name>
     <description>Context Menu Disable for Android</description>
