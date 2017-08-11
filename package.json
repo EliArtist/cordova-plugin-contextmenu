@@ -1,0 +1,19 @@
+{
+  "name": "cordova-contextmenu",
+  "version": "0.0.1-dev",
+  "description": "Context Menu Disable for Android",
+  "cordova": {
+    "id": "cordova-contextmenu",
+    "platforms": [
+      "android"
+    ]
+  },
+  "author": "Elias Künstler",
+  "engines": {
+    "cordovaDependencies": {
+      "5.0.0": {
+        "cordova": ">100"
+      }
+    }
+  }
+}

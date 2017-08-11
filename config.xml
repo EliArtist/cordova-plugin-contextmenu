@@ -1,0 +1,27 @@
+<!--<platform name="android">-->
+    <!--<config-file target="config.xml" parent="/*">-->
+        <!--<feature name="contextmenuAndroid">-->
+            <!--<param name="android-package" value="org.apache.cordova.plugin.contextmenuAndroid"/>-->
+        <!--</feature>-->
+    <!--</config-file>-->
+
+    <!--<source-file src="src/android/contextmenuAndroid.java" target-dir="src/org/apache/cordova/plugin" />-->
+<!--</platform>-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-file"
+        version="0.0.1-dev">
+    <name>Contextmenu</name>
+    <description>Context Menu Disable for Android</description>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Contextmenu">
+                <param name="android-package" value="org.apache.cordova.plugin.contextmenuAndroid"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/contextmenuAndroid.java" target-dir="src/org/apache/cordova/plugin" />
+    </platform>
+</plugin>
