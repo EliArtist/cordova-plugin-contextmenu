@@ -15,6 +15,7 @@
         version="0.0.1-dev">
     <name>Contextmenu</name>
     <description>Context Menu Disable for Android</description>
+    <asset src="www/ContextMenu.js" target="js/ContextMenu.js"/>
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="Contextmenu">
