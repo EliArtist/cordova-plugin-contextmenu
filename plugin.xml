@@ -4,16 +4,19 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="de.adornis.cordova.contextmenu"
         version="0.0.1-dev">
+
     <name>Contextmenu</name>
+    <author>Adornis Ventures UG (haftungsbeschränkt)</author>
     <description>Context Menu Disable for Android</description>
-    <asset src="www/ContextMenu.js" target="js/ContextMenu.js"/>
+
+    <repo>https://github.com/EliArtist/cordova-plugin-contextmenu.git</repo>
 
     <js-module src="www/ContextMenu.js" name="ContextMenu">
         <clobbers target="ContextMenu"/>
     </js-module>
 
     <platform name="android">
-        <config-file target="plugin.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Contextmenu">
                 <param name="android-package" value="de.adornis.cordova.Contextmenu"/>
                 <param name="onload" value="true" />
