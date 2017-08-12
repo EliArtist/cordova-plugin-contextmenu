@@ -19,7 +19,7 @@
     <platform name="android">
         <config-file target="plugin.xml" parent="/*">
             <feature name="Contextmenu">
-                <param name="android-package" value="de.adornis.cordova.contextmenu"/>
+                <param name="android-package" value="de.adornis.cordova.Contextmenu"/>
             </feature>
         </config-file>
 
@@ -27,6 +27,6 @@
             <clobbers target="ContextMenu"/>
         </js-module>
 
-        <source-file src="src/android/Contextmenu.java" target-dir="src/de/adornis/cordova/contextmenu" />
+        <source-file src="src/android/Contextmenu.java" target-dir="src/de/adornis/cordova" />
     </platform>
 </plugin>

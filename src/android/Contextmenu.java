@@ -1,4 +1,4 @@
-package de.adornis.cordova.contextmenu;
+package de.adornis.cordova;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
@@ -16,8 +16,6 @@ public class Contextmenu extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-//        Mywebview myWebView = (Mywebview) webView;
-
         Log.v("YaskawaManuals", "initialized contextmenu-cordova-plugin");
 
         Activity activity = cordova.getActivity();
