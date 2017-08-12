@@ -1,4 +1,4 @@
-package org.apache.cordova.mywebview;
+package org.apache.cordova.plugin;
 
 protected class MyWebView extends CordovaWebView {
 
