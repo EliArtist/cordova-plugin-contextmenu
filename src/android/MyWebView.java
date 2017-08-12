@@ -1,6 +1,8 @@
 package org.apache.cordova.plugin;
 
-protected class MyWebView extends CordovaWebView {
+import org.apache.cordova.CordovaWebView;
+
+public class Mywebview extends CordovaWebView {
 
     private ActionMode mActionMode = null;
 
