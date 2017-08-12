@@ -19,7 +19,7 @@
     <platform name="android">
         <config-file target="plugin.xml" parent="/*">
             <feature name="Contextmenu">
-                <param name="android-package" value="org.apache.cordova.plugin.contextmenuAndroid"/>
+                <param name="android-package" value="org.apache.cordova.plugin.Contextmenu"/>
             </feature>
         </config-file>
 
@@ -28,6 +28,5 @@
         </js-module>
 
         <source-file src="src/android/Contextmenu.java" target-dir="src/org/apache/cordova/plugin" />
-        <source-file src="src/android/Mywebview.java" target-dir="src/org/apache/cordova/plugin" />
     </platform>
 </plugin>

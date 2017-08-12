@@ -29,6 +29,8 @@ public class Contextmenu extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        Log.v("YASKAWAMANUALS:::", "executing command " + action);
+
         if (action.equals("hideContextMenu")) {
             String message = args.getString(0);
             this.hideContextMenu(callbackContext);
