@@ -14,6 +14,7 @@ var ContextMenu = {
     * @param (Function) errorCallback   function to call when there are any errors
     */
     hideContextMenu: function(resultCallback, errorCallback) {
+        console.log("Hello I'm HIDECONTEXTMENU function in ContextMenu.js");
         cordova.exec(resultCallback, errorCallback, 'Contextmenu', 'hideContextMenu');
     }
 }

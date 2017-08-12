@@ -8,7 +8,11 @@
       "android"
     ]
   },
-  "author": "Elias Künstler",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliArtist/cordova-plugin-contextmenu.git"
+  },
+  "author": "Adornis Ventures UG (haftungsbeschränkt)",
   "engines": {
     "cordovaDependencies": {
       "5.0.0": {
