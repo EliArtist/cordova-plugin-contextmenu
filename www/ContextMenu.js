@@ -14,7 +14,7 @@ var ContextMenu = {
     * @param (Function) errorCallback   function to call when there are any errors
     */
     hideContextMenu: function(resultCallback, errorCallback) {
-        exec(win, fail, 'ContextMenu', 'hideContextMenu');
+        exec(resultCallback, errorCallback, 'ContextMenu', 'hideContextMenu');
         return "function \"hideContextMenu\" running..";
     }
 }

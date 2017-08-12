@@ -10,12 +10,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.util.Log;
 
 public class Contextmenu extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 //        Mywebview myWebView = (Mywebview) webView;
+
+        Log.v("YASKAWAMANUALS::::", "initialized contextmenu-cordova-plugin");
 
         Activity activity = cordova.getActivity();
 
