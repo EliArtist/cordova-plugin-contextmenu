@@ -10,7 +10,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
-import android.app.ContextMenu;
 
 public class Contextmenu extends CordovaPlugin {
 
@@ -22,7 +21,7 @@ public class Contextmenu extends CordovaPlugin {
 
         activity.unregisterForContextMenu(webView.getView());
 
-        super.initialize(cordova, myWebView);
+        super.initialize(cordova, webView);
     }
 
     @Override
