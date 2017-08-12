@@ -9,7 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import MyWebView;
+//import MyWebView;
 
 public class Contextmenu extends CordovaPlugin {
 
