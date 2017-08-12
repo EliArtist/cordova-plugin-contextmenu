@@ -1,6 +1,7 @@
 package org.apache.cordova.plugin;
 
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
@@ -11,8 +12,8 @@ public class Contextmenu extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-//        MyWebView myWebView = (MyWebView) webView;
         super.initialize(cordova, webView);
+        //        MyWebView myWebView = (MyWebView) webView;
     }
 
     @Override
