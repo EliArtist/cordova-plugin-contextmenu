@@ -1,14 +1,5 @@
-<!--<platform name="android">-->
-    <!--<config-file target="plugin.xml" parent="/*">-->
-        <!--<feature name="contextmenuAndroid">-->
-            <!--<param name="android-package" value="org.apache.cordova.plugin.contextmenuAndroid"/>-->
-        <!--</feature>-->
-    <!--</config-file>-->
-
-    <!--<source-file src="src/android/Contextmenu.java" target-dir="src/org/apache/cordova/plugin" />-->
-<!--</platform>-->
-
 <?xml version="1.0" encoding="UTF-8"?>
+
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="de.adornis.cordova.contextmenu"
@@ -16,16 +7,18 @@
     <name>Contextmenu</name>
     <description>Context Menu Disable for Android</description>
     <asset src="www/ContextMenu.js" target="js/ContextMenu.js"/>
+
+    <js-module src="www/ContextMenu.js" name="ContextMenu">
+        <clobbers target="ContextMenu"/>
+    </js-module>
+
     <platform name="android">
         <config-file target="plugin.xml" parent="/*">
             <feature name="Contextmenu">
                 <param name="android-package" value="de.adornis.cordova.Contextmenu"/>
+                <param name="onload" value="true" />
             </feature>
         </config-file>
-
-        <js-module src="www/ContextMenu.js" name="ContextMenu">
-            <clobbers target="ContextMenu"/>
-        </js-module>
 
         <source-file src="src/android/Contextmenu.java" target-dir="src/de/adornis/cordova" />
     </platform>
