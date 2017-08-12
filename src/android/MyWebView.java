@@ -1,3 +1,5 @@
+package org.apache.cordova.mywebview;
+
 protected class MyWebView extends CordovaWebView {
 
     private ActionMode mActionMode = null;
