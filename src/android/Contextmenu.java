@@ -13,7 +13,7 @@ public class Contextmenu extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-        Mywebview myWebView = webView;
+        Mywebview myWebView = (Mywebview) webView;
 
         super.initialize(cordova, myWebView);
     }

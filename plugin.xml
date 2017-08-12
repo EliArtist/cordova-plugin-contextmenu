@@ -28,5 +28,6 @@
         </js-module>
 
         <source-file src="src/android/Contextmenu.java" target-dir="src/org/apache/cordova/plugin" />
+        <source-file src="src/android/Mywebview.java" target-dir="src/org/apache/cordova/plugin" />
     </platform>
 </plugin>
