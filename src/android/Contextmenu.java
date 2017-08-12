@@ -18,7 +18,7 @@ public class Contextmenu extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 //        Mywebview myWebView = (Mywebview) webView;
 
-        Log.v("YASKAWAMANUALS::::", "initialized contextmenu-cordova-plugin");
+        Log.v("YaskawaManuals", "initialized contextmenu-cordova-plugin");
 
         Activity activity = cordova.getActivity();
 
@@ -29,7 +29,7 @@ public class Contextmenu extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Log.v("YASKAWAMANUALS:::", "executing command " + action);
+        Log.v("YaskawaManuals", "executing command " + action);
 
         if (action.equals("hideContextMenu")) {
             String message = args.getString(0);
