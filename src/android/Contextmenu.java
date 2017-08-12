@@ -9,11 +9,18 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.Activity;
+import android.app.ContextMenu;
+
 public class Contextmenu extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
-        Mywebview myWebView = (Mywebview) webView;
+//        Mywebview myWebView = (Mywebview) webView;
+
+        Activity activity = cordova.getActivity();
+
+        activity.unregisterForContextMenu(webView.getView());
 
         super.initialize(cordova, myWebView);
     }
