@@ -1,4 +1,4 @@
-package org.apache.cordova.plugin;
+package de.adornis.cordova.contextmenu;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
