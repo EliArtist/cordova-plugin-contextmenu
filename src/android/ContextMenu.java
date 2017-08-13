@@ -17,6 +17,7 @@ import android.net.Uri;
 import android.telephony.TelephonyManager;
 import android.content.pm.PackageManager;
 import android.util.Log;
+import android.app.Activity;
 
 public class ContextMenu extends CordovaPlugin {
     public static final int CALL_REQ_CODE = 0;
