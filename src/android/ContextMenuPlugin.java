@@ -38,7 +38,7 @@ public class ContextMenuPlugin extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         Log.i("YaskawaManuals", "EXECUTING INITIALIZE FUNCTION!!");
         Log.i("chromium", "EXECUTING INITIALIZE FUNCTION!!");
-        Activity activity = cordova.getActivity();
+        final Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
 
