@@ -16,7 +16,7 @@ import android.telephony.TelephonyManager;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
-public class CFCallNumber extends CordovaPlugin {
+public class ContextMenu extends CordovaPlugin {
     public static final int CALL_REQ_CODE = 0;
     public static final int PERMISSION_DENIED_ERROR = 20;
     public static final String CALL_PHONE = Manifest.permission.CALL_PHONE;
