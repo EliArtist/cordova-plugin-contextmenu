@@ -39,10 +39,16 @@ public class ContextMenu extends CordovaPlugin {
         Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
-        activity.onActionModeStarted = function(ActionMode mode) {
-            Log.i("YaskawaManuals", "Finishing ActionMode");
-            mode.finish();
-        };
+
+        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
+
+            @Override
+            public boolean onLongClick(View v) {
+                v.setSelected(true);
+                mActionMode = null;
+                return true;
+            }
+        });
 
         super.initialize(cordova, webView);
     }
