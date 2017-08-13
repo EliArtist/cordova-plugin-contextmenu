@@ -2,6 +2,8 @@ package mx.ferreyra.callnumber;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,8 +31,17 @@ public class ContextMenu extends CordovaPlugin {
     }
 
     @Override
+    public void initialize(CordovaInterface cordova, CordovaWebView webView) {
+        Activity activity = cordova.getActivity();
+
+        activity.unregisterForContextMenu(webView.getView());
+
+        super.initialize(cordova, webView);
+    }
+
+    @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Log.v("YaskawaManuals", "EXECUTING EXECUTE FUNCTION!!");
+        Log.i("chromium", "EXECUTING EXECUTE FUNCTION!!");
 
         this.callbackContext = callbackContext;
         this.executeArgs = args;
@@ -42,7 +53,7 @@ public class ContextMenu extends CordovaPlugin {
                 getCallPermission(CALL_REQ_CODE);
             }
         } else if (action.equals("isCallSupported")) {
-            this.callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, isTelephonyEnabled()));
+            callbackContext.success("Hello World you fking did it!");
         } else {
             return false;
         }
