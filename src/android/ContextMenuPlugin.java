@@ -57,7 +57,7 @@ public class ContextMenuPlugin extends CordovaPlugin {
             @Override
             public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 Log.i("YaskawaManuals", "ContextMenu gets created!");
-                super.onCreateContextMenu(null, v, menuInfo);
+//                super.onCreateContextMenu(null, v, menuInfo);
             }
         });
 
