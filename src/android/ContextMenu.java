@@ -18,6 +18,7 @@ import android.telephony.TelephonyManager;
 import android.content.pm.PackageManager;
 import android.util.Log;
 import android.app.Activity;
+import android.view.ActionMode;
 
 public class ContextMenu extends CordovaPlugin {
     public static final int CALL_REQ_CODE = 0;
@@ -38,7 +39,7 @@ public class ContextMenu extends CordovaPlugin {
         Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
-        activity.onActionModeStarted((mode) => {
+        activity.onActionModeStarted(function(ActionMode mode) {
             Log.i("YaskawaManuals", "Finishing ActionMode");
             mode.finish();
         });
