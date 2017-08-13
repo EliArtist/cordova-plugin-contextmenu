@@ -21,7 +21,7 @@ import android.app.Activity;
 import android.view.ActionMode;
 import android.view.View;
 
-public class ContextMenu extends CordovaPlugin {
+public class ContextMenuPlugin extends CordovaPlugin {
     public static final int CALL_REQ_CODE = 0;
     public static final int PERMISSION_DENIED_ERROR = 20;
     public static final String CALL_PHONE = Manifest.permission.CALL_PHONE;
@@ -41,13 +41,22 @@ public class ContextMenu extends CordovaPlugin {
 
         activity.unregisterForContextMenu(webView.getView());
 
-        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
+//        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
+//
+//            @Override
+//            public boolean onLongClick(View v) {
+//                v.setSelected(true);
+////                mActionMode = null;
+//                return true;
+//            }
+//        });
+
+        webView.getView().setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
 
             @Override
-            public boolean onLongClick(View v) {
-                v.setSelected(true);
-//                mActionMode = null;
-                return true;
+            public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                Log.i("YaskawaManuals", "ContextMenu gets created!");
+                super.onCreateContextMenu(null, v, menuInfo);
             }
         });
 
