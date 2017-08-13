@@ -1,23 +1,31 @@
 {
-  "name": "cordova-contextmenu",
-  "version": "0.0.1-dev",
-  "description": "Context Menu Disable for Android",
+  "name": "call-number",
+  "version": "1.0.1",
+  "description": "Call Number from Cordova Application",
   "cordova": {
-    "id": "cordova-contextmenu",
+    "id": "call-number",
     "platforms": [
+      "ios",
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EliArtist/cordova-plugin-contextmenu.git"
+    "url": "git+https://github.com/Rohfosho/CordovaCallNumberPlugin.git"
   },
-  "author": "Adornis Ventures UG (haftungsbeschränkt)",
-  "engines": {
-    "cordovaDependencies": {
-      "5.0.0": {
-        "cordova": ">100"
-      }
-    }
-  }
+  "keywords": [
+    "cordova",
+    "call",
+    "dialer",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Rohfosho/CordovaCallNumberPlugin/issues"
+  },
+  "homepage": "https://github.com/Rohfosho/CordovaCallNumberPlugin#readme"
 }
