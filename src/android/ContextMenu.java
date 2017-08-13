@@ -46,7 +46,7 @@ public class ContextMenu extends CordovaPlugin {
             @Override
             public boolean onLongClick(View v) {
                 v.setSelected(true);
-                mActionMode = null;
+//                mActionMode = null;
                 return true;
             }
         });
