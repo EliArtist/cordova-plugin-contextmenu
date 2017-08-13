@@ -60,7 +60,6 @@ public class ContextMenuPlugin extends CordovaPlugin {
             public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 Log.i("YaskawaManuals", "ContextMenu gets created!");
 
-                menu.setHeaderTitle("Options for this page");
                 menu.getItem(1).setEnabled(false);
 //                super.onCreateContextMenu(null, v, menuInfo);
             }
