@@ -16,7 +16,7 @@
 
     <license>Apache 2.0</license>
     <keywords>cordova,call,dialer,phonegap</keywords>
-    <js-module src="www/JsContextMenu.js" name="ContextMenu">
+    <js-module src="www/ContextMenu.js" name="ContextMenu">
         <clobbers target="call"/>
     </js-module>
 
