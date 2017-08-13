@@ -37,30 +37,39 @@ public class ContextMenuPlugin extends CordovaPlugin {
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         Log.i("YaskawaManuals", "EXECUTING INITIALIZE FUNCTION!!");
-        Log.i("chromium", "EXECUTING INITIALIZE FUNCTION!!");
         final Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
 
-        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
+//        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
+//
+//            @Override
+//            public boolean onLongClick(View v) {
+////                v.setSelected(true);
+////                mActionMode = null;
+//                Log.i("YaskawaManuals", "Clicked Long, so now we need to handle that.");
+//                activity.closeContextMenu();
+//                activity.closeOptionsMenu();
+//                return true;
+//            }
+//        });
+
+        webView.getView().setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
 
             @Override
-            public boolean onLongClick(View v) {
-//                v.setSelected(true);
-//                mActionMode = null;
-                Log.i("YaskawaManuals", "Clicked Long, so now we need to handle that.");
-                activity.closeContextMenu();
-                activity.closeOptionsMenu();
-                return true;
+            public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                Log.i("YaskawaManuals", "ContextMenu gets created!");
+//                super.onCreateContextMenu(null, v, menuInfo);
             }
         });
+
 
         super.initialize(cordova, webView);
     }
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Log.i("chromium", "EXECUTING EXECUTE FUNCTION!!");
+        Log.i("YaskawaManuals", "EXECUTING EXECUTE FUNCTION!!");
 
         this.callbackContext = callbackContext;
         this.executeArgs = args;
