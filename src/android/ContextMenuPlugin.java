@@ -61,7 +61,9 @@ public class ContextMenuPlugin extends CordovaPlugin {
             @Override
             public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 Log.i("YaskawaManuals", "ContextMenu gets created!");
-                this.super.onCreateContextMenu(null, v, menuInfo);
+
+                //Warum kann er da bitte nicht super benutzen??
+//                super.onCreateContextMenu(null, v, menuInfo);
             }
         });
 
