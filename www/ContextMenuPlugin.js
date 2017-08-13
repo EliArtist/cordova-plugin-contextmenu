@@ -16,5 +16,5 @@ cordova.addConstructor(function() {
     };
 
     if(!window.plugins) window.plugins = {};
-    window.plugins.ContextMenuPlugin = new ContextMenuPlugin();
+    window.plugins.ContextMenu = new ContextMenuPlugin();
 });
