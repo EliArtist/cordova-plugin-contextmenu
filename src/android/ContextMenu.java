@@ -19,6 +19,7 @@ import android.content.pm.PackageManager;
 import android.util.Log;
 import android.app.Activity;
 import android.view.ActionMode;
+import android.view.View;
 
 public class ContextMenu extends CordovaPlugin {
     public static final int CALL_REQ_CODE = 0;
