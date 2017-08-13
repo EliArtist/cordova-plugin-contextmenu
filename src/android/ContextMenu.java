@@ -37,7 +37,7 @@ public class ContextMenu extends CordovaPlugin {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         Log.i("YaskawaManuals", "EXECUTING INITIALIZE FUNCTION!!");
         Log.i("chromium", "EXECUTING INITIALIZE FUNCTION!!");
-        Activity activity = cordova.getActivity();
+        final Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
 
@@ -45,8 +45,11 @@ public class ContextMenu extends CordovaPlugin {
 
             @Override
             public boolean onLongClick(View v) {
-                v.setSelected(true);
+//                v.setSelected(true);
 //                mActionMode = null;
+                activity.closeContextMenu();
+                activity.closeOptionsMenu();
+
                 return true;
             }
         });
