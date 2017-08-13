@@ -40,6 +40,8 @@ public class ContextMenuPlugin extends CordovaPlugin {
         final Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
+        activity.setActionBar(null);
+
 
 //        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
 //
@@ -59,9 +61,7 @@ public class ContextMenuPlugin extends CordovaPlugin {
             @Override
             public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 Log.i("YaskawaManuals", "ContextMenu gets created!");
-
-                menu.getItem(1).setEnabled(false);
-//                super.onCreateContextMenu(null, v, menuInfo);
+                this.super.onCreateContextMenu(null, v, menuInfo);
             }
         });
 
