@@ -49,8 +49,6 @@ public class ContextMenuPlugin extends CordovaPlugin {
 //                v.setSelected(true);
 //                mActionMode = null;
                 Log.i("YaskawaManuals", "Clicked Long, so now we need to handle that.");
-                View.OnLongClickListener listener = new View.OnLongClickListener();
-                listener.onLongClick(v);
                 activity.closeContextMenu();
                 activity.closeOptionsMenu();
                 return true;
