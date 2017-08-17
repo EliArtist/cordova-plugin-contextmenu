@@ -40,7 +40,6 @@ public class ContextMenuPlugin extends CordovaPlugin {
         final Activity activity = cordova.getActivity();
 
         activity.unregisterForContextMenu(webView.getView());
-        activity.setActionBar(null);
 
 
 //        webView.getView().setOnLongClickListener(new View.OnLongClickListener() {
@@ -62,8 +61,7 @@ public class ContextMenuPlugin extends CordovaPlugin {
             public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 Log.i("YaskawaManuals", "ContextMenu gets created!");
 
-                //Warum kann er da bitte nicht super benutzen??
-//                super.onCreateContextMenu(null, v, menuInfo);
+                menu.clear();
             }
         });
 
