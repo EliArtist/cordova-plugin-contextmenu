@@ -65,6 +65,9 @@ public class ContextMenuPlugin extends CordovaPlugin {
 
                 menu.clear();
                 menu.close();
+
+                activity.closeContextMenu();
+                activity.closeOptionsMenu();
             }
         });
 
