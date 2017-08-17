@@ -60,8 +60,8 @@ public class ContextMenuPlugin extends CordovaPlugin {
             @Override
             public void onCreateContextMenu (ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 Log.i("YaskawaManuals", "ContextMenu gets created!");
-                Log.i("YaskawaManuals", menu.hasVisibleItems());
-                Log.i("YaskawaManuals", menu.size());
+                Log.i("YaskawaManuals", "has visible items: " + menu.hasVisibleItems());
+                Log.i("YaskawaManuals", "size of menu items: " + menu.size());
 
                 menu.clear();
                 menu.close();
