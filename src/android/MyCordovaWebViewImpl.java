@@ -99,12 +99,12 @@ public class MyCordovaWebViewImpl implements CordovaWebView {
     }
 
     // Convenience method for when creating programmatically (not from Config.xml).
-    public void init(CordovaInterface cordova) {
+    public void init(MyCordovaInteraceImpl cordova) {
         init(cordova, new ArrayList<PluginEntry>(), new CordovaPreferences());
     }
 
     @Override
-    public void init(CordovaInterface cordova, List<PluginEntry> pluginEntries, CordovaPreferences preferences) {
+    public void init(MyCordovaInteraceImpl cordova, List<PluginEntry> pluginEntries, CordovaPreferences preferences) {
         if (this.cordova != null) {
             throw new IllegalStateException();
         }

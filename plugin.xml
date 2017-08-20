@@ -32,6 +32,7 @@
         </config-file>
         <source-file src="src/android/ContextMenuPlugin.java" target-dir="src/mx/ferreyra/callnumber" />
         <source-file src="src/android/MyCordovaWebViewImpl.java" target-dir="src/mx/ferreyra/callnumber" />
+        <source-file src="src/android/MyCordovaInterfaceImpl.java" target-dir="src/mx/ferreyra/callnumber" />
         <source-file src="src/android/MyActivity.java" target-dir="src/mx/ferreyra/callnumber" />
     </platform>
 </plugin>
