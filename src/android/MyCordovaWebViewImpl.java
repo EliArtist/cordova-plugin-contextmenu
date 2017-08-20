@@ -13,7 +13,7 @@ public class MyCordovaWebViewImpl extends CordovaWebViewImpl {
     @Override
     private View mCustomView;
 
-    public CordovaWebViewImpl(CordovaWebViewEngine cordovaWebViewEngine) {
+    public MyCordovaWebViewImpl(CordovaWebViewEngine cordovaWebViewEngine) {
         this.engine = cordovaWebViewEngine;
     }
 
