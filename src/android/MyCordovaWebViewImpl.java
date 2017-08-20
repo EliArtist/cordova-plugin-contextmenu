@@ -40,6 +40,10 @@ import org.apache.cordova.CordovaResourceApi;
 import org.apache.cordova.CordovaPreferences;
 import org.apache.cordova.PluginResult;
 import org.apache.cordova.ICordovaCookieManager;
+import org.apache.cordova.CoreAndroid;
+import org.apache.cordova.NativeToJsMessageQueue;
+import org.apache.cordova.PluginEntry;
+import org.apache.cordova.LOG;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
