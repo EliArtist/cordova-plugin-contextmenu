@@ -32,6 +32,15 @@ import org.apache.cordova.engine.SystemWebViewEngine;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.PluginManager;
+import org.apache.cordova.CordovaWebViewEngine;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaResourceApi;
+import org.apache.cordova.CordovaPreferences;
+import org.apache.cordova.PluginResult;
+import org.apache.cordova.ICordovaCookieManager;
+
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.HashSet;
