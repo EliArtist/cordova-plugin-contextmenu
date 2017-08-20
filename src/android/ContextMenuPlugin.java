@@ -22,6 +22,8 @@ import android.view.ActionMode;
 import android.view.View;
 import android.view.ContextMenu;
 
+import org.apache.cordova.MyCordovaWebViewImpl;
+
 public class ContextMenuPlugin extends CordovaPlugin {
     public static final int CALL_REQ_CODE = 0;
     public static final int PERMISSION_DENIED_ERROR = 20;
@@ -72,7 +74,7 @@ public class ContextMenuPlugin extends CordovaPlugin {
         });
 
 
-        super.initialize(cordova, webView);
+        super.initialize(cordova, (MyCordovaWebViewImpl) webView);
     }
 
     @Override

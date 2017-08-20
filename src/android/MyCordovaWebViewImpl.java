@@ -1,7 +1,10 @@
-package mx.ferreyra.callnumber;
+package org.apache.cordova;
+
+import org.apache.cordova.MyActivity;
 
 import org.apache.cordova.CordovaWebViewImpl;
 import org.apache.cordova.CordovaWebViewEngine;
+import org.apache.cordova.LOG;
 import android.view.View;
 
 import java.util.Map;
