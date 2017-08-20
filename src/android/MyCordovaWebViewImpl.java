@@ -1,6 +1,7 @@
 package mx.ferreyra.callnumber;
 
-import org.apache.cordova.CordovaWebView;
+import org.apache.cordova.CordovaWebViewImpl;
+import android.view.View;
 
 public class MyCordovaWebViewImpl extends CordovaWebViewImpl {
 
