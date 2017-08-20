@@ -1,4 +1,4 @@
-package org.apache.cordova;
+package mx.ferreyra.callnumber;
 
 import org.apache.cordova.MyActivity;
 

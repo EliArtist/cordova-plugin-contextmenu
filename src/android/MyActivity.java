@@ -1,4 +1,4 @@
-package org.apache.cordova;
+package mx.ferreyra.callnumber;
 
 import android.app.Activity;
 import android.view.ActionMode;
