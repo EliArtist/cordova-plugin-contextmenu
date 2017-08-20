@@ -44,7 +44,7 @@ import java.util.concurrent.Executors;
 /**
  * Default implementation of CordovaInterface.
  */
-public class CordovaInterfaceImpl implements CordovaInterface {
+public class MyCordovaInterfaceImpl implements CordovaInterface {
     private static final String TAG = "CordovaInterfaceImpl";
     protected MyActivity activity;
     protected ExecutorService threadPool;
@@ -58,11 +58,11 @@ public class CordovaInterfaceImpl implements CordovaInterface {
     protected boolean activityWasDestroyed = false;
     protected Bundle savedPluginState;
 
-    public CordovaInterfaceImpl(MyActivity activity) {
+    public MyCordovaInterfaceImpl(MyActivity activity) {
         this(activity, Executors.newCachedThreadPool());
     }
 
-    public CordovaInterfaceImpl(MyActivity activity, ExecutorService threadPool) {
+    public MyCordovaInterfaceImpl(MyActivity activity, ExecutorService threadPool) {
         this.activity = activity;
         this.threadPool = threadPool;
         this.permissionResultCallbacks = new CallbackMap();
