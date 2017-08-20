@@ -104,7 +104,7 @@ public class MyCordovaWebViewImpl implements CordovaWebView {
     }
 
     @Override
-    public void init(MyCordovaInterfaceImpl cordova, List<PluginEntry> pluginEntries, CordovaPreferences preferences) {
+    public void init(CordovaInterface cordova, List<PluginEntry> pluginEntries, CordovaPreferences preferences) {
         if (this.cordova != null) {
             throw new IllegalStateException();
         }
