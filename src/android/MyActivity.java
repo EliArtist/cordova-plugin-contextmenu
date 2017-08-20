@@ -9,7 +9,7 @@ import android.util.Log;
 public class MyActivity extends Activity {
 
     @Override
-    public void onStartActionMode(ActionMode mode) {
+    public void onActionModeStarted(ActionMode mode) {
         Menu menu = mode.getMenu();
         menu.clear();
 
