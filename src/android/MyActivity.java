@@ -11,8 +11,8 @@ import android.util.Log;
 public class MyActivity extends Activity {
 
     public MyActivity() {
-        Log.i("YaskawaManuals", "My Activity is initialized");
         super();
+        Log.i("YaskawaManuals", "My Activity is initialized");
     }
 
     @Override
