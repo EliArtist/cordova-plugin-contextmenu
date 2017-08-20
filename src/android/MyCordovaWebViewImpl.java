@@ -109,7 +109,7 @@ public class MyCordovaWebViewImpl implements CordovaWebView {
         if (this.cordova != null) {
             throw new IllegalStateException();
         }
-        this.cordova = cordova;
+        this.cordova = (MyCordovaInterfaceImpl) cordova;
         this.preferences = preferences;
         pluginManager = new PluginManager(this, this.cordova, pluginEntries);
         resourceApi = new CordovaResourceApi(engine.getView().getContext(), pluginManager);
