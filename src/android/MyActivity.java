@@ -10,6 +10,11 @@ import android.util.Log;
 
 public class MyActivity extends Activity {
 
+    public MyActivity() {
+        Log.i("YaskawaManuals", "My Activity is initialized");
+        super();
+    }
+
     @Override
     public void onActionModeStarted(ActionMode mode) {
         Menu menu = mode.getMenu();
