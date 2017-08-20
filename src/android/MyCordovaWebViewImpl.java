@@ -1,12 +1,21 @@
 package mx.ferreyra.callnumber;
 
 import org.apache.cordova.CordovaWebViewImpl;
+import org.apache.cordova.CorovaWebViewEngine;
 import android.view.View;
+
+import java.util.Map;
+
+import android.util.Log;
 
 public class MyCordovaWebViewImpl extends CordovaWebViewImpl {
 
     @Override
     private View mCustomView;
+
+    public CordovaWebViewImpl(CordovaWebViewEngine cordovaWebViewEngine) {
+        this.engine = cordovaWebViewEngine;
+    }
 
     @Override
     public void loadUrlIntoView(final String url, boolean recreatePlugins) {
