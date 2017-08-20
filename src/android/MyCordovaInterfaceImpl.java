@@ -46,7 +46,7 @@ import java.util.concurrent.Executors;
  */
 public class CordovaInterfaceImpl implements CordovaInterface {
     private static final String TAG = "CordovaInterfaceImpl";
-    protected Activity activity;
+    protected MyActivity activity;
     protected ExecutorService threadPool;
     protected PluginManager pluginManager;
 
@@ -58,11 +58,11 @@ public class CordovaInterfaceImpl implements CordovaInterface {
     protected boolean activityWasDestroyed = false;
     protected Bundle savedPluginState;
 
-    public CordovaInterfaceImpl(Activity activity) {
+    public CordovaInterfaceImpl(MyActivity activity) {
         this(activity, Executors.newCachedThreadPool());
     }
 
-    public CordovaInterfaceImpl(Activity activity, ExecutorService threadPool) {
+    public CordovaInterfaceImpl(MyActivity activity, ExecutorService threadPool) {
         this.activity = activity;
         this.threadPool = threadPool;
         this.permissionResultCallbacks = new CallbackMap();
@@ -83,13 +83,13 @@ public class CordovaInterfaceImpl implements CordovaInterface {
     public void setActivityResultCallback(CordovaPlugin plugin) {
         // Cancel any previously pending activity.
         if (activityResultCallback != null) {
-            activityResultCallback.onActivityResult(activityResultRequestCode, Activity.RESULT_CANCELED, null);
+            activityResultCallback.onActivityResult(activityResultRequestCode, MyActivity.RESULT_CANCELED, null);
         }
         activityResultCallback = plugin;
     }
 
     @Override
-    public Activity getActivity() {
+    public MyActivity getActivity() {
         return activity;
     }
 
