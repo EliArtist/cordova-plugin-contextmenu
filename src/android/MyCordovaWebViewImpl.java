@@ -35,7 +35,6 @@ import org.json.JSONObject;
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.PluginManager;
 import org.apache.cordova.CordovaWebViewEngine;
-import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaResourceApi;
 import org.apache.cordova.CordovaPreferences;
 import org.apache.cordova.PluginResult;
@@ -63,7 +62,7 @@ public class MyCordovaWebViewImpl implements CordovaWebView {
     private PluginManager pluginManager;
 
     protected final CordovaWebViewEngine engine;
-    private CordovaInterface cordova;
+    private MyCordovaInterfaceImpl cordova;
 
     // Flag to track that a loadUrl timeout occurred
     private int loadUrlTimeout = 0;
