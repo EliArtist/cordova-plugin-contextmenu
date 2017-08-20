@@ -10,11 +10,8 @@ import android.util.Log;
 
 public class MyCordovaWebViewImpl extends CordovaWebViewImpl {
 
-    @Override
-    private View mCustomView;
-
     public MyCordovaWebViewImpl(CordovaWebViewEngine cordovaWebViewEngine) {
-        this.engine = cordovaWebViewEngine;
+        super(cordovaWebViewEngine);
     }
 
     @Override
