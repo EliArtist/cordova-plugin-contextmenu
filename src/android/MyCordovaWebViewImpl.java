@@ -43,6 +43,7 @@ import org.apache.cordova.CoreAndroid;
 import org.apache.cordova.NativeToJsMessageQueue;
 import org.apache.cordova.PluginEntry;
 import org.apache.cordova.LOG;
+import org.apache.cordova.CordovaInterface;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
